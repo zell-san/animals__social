@@ -1,0 +1,162 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Page'
+	- var pageClass = 'index-page'
+
+block content
+
+	include ../modules/menu
+
+	.container-fluid.page
+		.container
+			include ../modules/breadcrumb
+			H1.page__title Don Sphinx - cat - grey
+			.page__box
+				include ../modules/sidebar
+				.page__content
+					.page__content-portfolio
+						.page__content-portfolio-flex
+							.page__content-portfolio-title Photo and video
+							.page__content-portfolio-all All photo →
+						.page__content-portfolio-slider
+							img.page__content-portfolio-slider-left(src="static/img/general/left.png")
+							.page__content-portfolio-slider-img
+								img(src="static/img/content/slide1.png")
+							.page__content-portfolio-slider-img
+								img(src="static/img/content/unikalnost-sfinksov.png")
+							.page__content-portfolio-slider-img
+								img(src="static/img/content/37154.png")
+							.page__content-portfolio-slider-img
+								img(src="static/img/content/noun_Photo_2059814.png")
+							.page__content-portfolio-slider-img
+								img(src="static/img/content/noun_Photo_2059814.png")
+							img.page__content-portfolio-slider-right(src="static/img/general/right.png")
+					.page__content-block
+						.page__content-center
+							.page__content-center-post
+								.page__content-center-post-title Information
+								.post
+									.post__param
+										.post__param-row
+											.post__param-row-value Gender
+											.post__param-row-result Girl
+										.post__param-row
+											.post__param-row-value Age
+											.post__param-row-result 3 months
+										.post__param-row
+											.post__param-row-value Color
+											.post__param-row-result Light gray with white spots
+									.post__price
+										.post__price-old
+											.post__price-old-line $1000
+											.post__price-old-discount -30%
+										.post__price-new
+											.post__price-new-big $650
+											+icon('play-button', 'post-play-button')
+								.page__content-center-post-title Description
+								.page__content-center-post-descr Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim…
+								.page__content-center-post-more More ↓
+								.post__bottom
+									.post__bottom-left Share:
+									.post__bottom-right
+										+icon('facebook', 'social')
+										+icon('telegram', 'social')
+										+icon('viber', 'social')
+										+icon('twitter1', 'social')
+
+							.extra
+								.extra__title Additionally
+								.extra__slider
+									img.extra__slider-left(src="static/img/general/left.png")
+									.extra__slider-item
+										.extra__slider-item-content
+											.extra__slider-item-content-img
+												+icon('standart', 'extra-icon')
+											.extra__slider-item-content-text Meets the standard
+										.extra__slider-item-border
+									.extra__slider-item
+										.extra__slider-item-content
+											.extra__slider-item-content-img
+												+icon('toilet', 'extra-icon')
+											.extra__slider-item-content-text Accustomed to the toilet
+										.extra__slider-item-border
+									.extra__slider-item
+										.extra__slider-item-content
+											.extra__slider-item-content-img
+												+icon('cup', 'extra-icon')
+											.extra__slider-item-content-text There are champions in the family
+										.extra__slider-item-border
+									.extra__slider-item
+										.extra__slider-item-content
+											.extra__slider-item-content-img
+												+icon('libra', 'extra-icon')
+											.extra__slider-item-content-text Accustomed to water (wash)
+										.extra__slider-item-border
+									.extra__slider-item
+										.extra__slider-item-content
+											.extra__slider-item-content-img
+												+icon('car', 'extra-icon')
+											.extra__slider-item-content-text Carries the road
+										.extra__slider-item-border
+									img.extra__slider-right(src="static/img/general/right.png")
+							.delivery
+								.delivery__country
+									.delivery__country-title Delivery
+									.delivery__country-box
+										.delivery__country-name United States
+										.delivery__country-descr Brooklyn, NY, 11230
+									.delivery__country-box
+										.delivery__country-name United Kingdom
+									.delivery__country-box
+										.delivery__country-name Canada
+								.delivery__border
+								.delivery__deposit
+									.delivery__deposit-title Deposit
+									.delivery__deposit-time No more than 7 days
+									.delivery__deposit-sum $300
+						.page__content-right
+							.profile
+								.profile__check
+									+icon('check', 'check-profile')
+								.profile__box
+									.profile__avatar
+										img(src='static/img/content/43.png')
+									.profile__info
+										.profile__info-id ID 742182
+										.profile__info-secondname Dobrev
+										.profile__info-name Nina
+								.profile__box.profile__skill
+									.profile__skill-red Manufacturer
+									.profile__skill-blue Dog handler
+									.profile__skill-btn-last +2
+								a.profile__number
+									+icon('phone')
+									span.profile__number-text Show phone
+								a.profile__message
+									+icon('pen')
+									span.profile__message-text To write a message
+								.profile__address
+									input.profile__address-input(placeholder='775 Westminster Avenue APT D5 Brooklyn, NY, 11230')
+									+icon('flag')
+								.profile__box.profile__bottom
+									.profile__bottom-star
+										+icon('star', 'star-prof')
+										span 4.9
+									.profile__bottom-like
+										+icon('like-prof')
+							.document
+								.document__title Related Documents
+								.document__box
+									+icon('doc')
+									.document__text Contract of sale
+									+icon('button')
+								.document__box
+									+icon('doc')
+									.document__text Receipt of deposit
+									+icon('button')
+
+
+
+
+

@@ -1,0 +1,85 @@
+.header
+  background-color white
+  height 80px
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+  position relative
+  z-index 9999
+
+  &__content
+    display flex
+    justify-content space-between
+    align-items center
+
+    &-search
+      display flex
+      align-items center
+      position relative
+      margin auto 58px auto 75px
+
+      &-input
+        size (500px 42px)
+        background: greyBB;
+        border-radius: 21px;
+        border none
+        padding 0 90px 0 46px
+
+      &-btn
+        size (74px 30px)
+        background: greyBBmedium
+        mix-blend-mode: normal;
+        border-radius: 16px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color greyBB
+        position absolute
+        right 6px
+
+    &-language
+      display flex
+      align-items center
+
+    &-border-vert
+      size (1px 50px)
+      background #E2E5E8
+      margin auto 20px
+
+    &-message
+      position relative
+      margin-right 23px
+
+    &-like
+      position relative
+
+    &-user
+      display: flex
+      align-items center
+
+      &-name
+        font-size rem(16px)
+        line-height: 19px;
+        font-weight bold
+
+      &-avatar
+        size (46px)
+        overflow hidden
+        margin auto 13px auto 12px
+
+    &-add
+      size (220px 48px)
+      background: linear-gradient(270deg, #FE536F 0%, #FFA900 100%);
+      border-radius: 24px;
+      display flex
+      justify-content center
+      align-items center
+      color white
+      text-transform uppercase
+      letter-spacing: -0.44px;
+      margin-left 30px
+
+.score
+  position absolute
+  right -10px
+  top -13px
+  color redBB

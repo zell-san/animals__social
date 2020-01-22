@@ -1,0 +1,33 @@
+.breadcrumb
+  display flex
+  align-items center
+  padding 20px 0 26px 0
+  line-height 19px
+  font-size rem(16px)
+
+  @media screen and (max-width bigPhoneWidth)
+    padding-left 0
+
+  &-item
+    padding-right 5px
+    font-weight bold
+
+    &:first-child
+      margin-right 15px
+
+    &__a
+      color #A8ABB4
+
+      &-first
+        background: #28A845;
+        border-radius: 12px;
+        color white
+        font-size 12px
+        line-height 14px
+        size (70px 24px)
+        display flex
+        justify-content center
+        align-items center
+
+    &__active
+      color blackBB

@@ -1,0 +1,380 @@
+.page
+  background greyBBbg
+  margin-bottom 65px
+
+  &__title
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom 29px
+
+  &__box
+    display flex
+    justify-content flex-end
+
+  &__content
+    width 978px
+    margin-left 20px
+    margin-bottom 33px
+
+    &-portfolio
+      background white
+      padding 30px
+      border-radius: 4px;
+      margin-bottom 20px
+
+      &-flex
+        display flex
+        align-items end
+        justify-content space-between
+        margin-bottom 35px
+
+      &-title
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 36px;
+
+      &-all
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: right;
+        color: blueBB;
+
+      &-slider
+        display flex
+        overflow hidden
+        position relative
+
+        &-img
+          border-radius: 8px;
+          size (180px)
+          overflow hidden
+          margin-right 10px
+          min-width: max-content;
+
+        &-left
+          height 100px
+          position absolute
+          top calc(50% - 50px)
+          left 0
+          cursor pointer
+
+        &-right
+          @extend .page__content-portfolio-slider-left
+          right 0
+          left auto
+
+    &-block
+      display flex
+
+    &-center
+      width 626px
+
+      &-post
+        @extend .page__content-portfolio
+
+        &-descr
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 22px;
+          color: #696B7E;
+          margin-top 23px
+
+        &-more
+          font-size: 16px;
+          line-height: 21px;
+          color blueBB
+          text-align center
+          margin-top 15px
+          margin-bottom 25px
+
+    &-right
+      margin-left 20px
+      width 332px
+
+.post
+  @extend .sidebar__item-parents-box
+  justify-content space-between
+  margin-bottom 46px
+
+  &__param
+    @extend .sidebar__item-parents-param
+
+    &-row
+      @extend .sidebar__item-parents-box
+
+      &-value
+        @extend .sidebar__item-parents-param-value
+        width 70px
+
+      &-result
+        @extend .sidebar__item-parents-param-result
+
+  &__price
+    @extend .sidebar__item-parents-check
+    justify-content end
+    flex-direction: column;
+
+    &-old
+      display flex
+      margin-bottom 7px
+      justify-content end
+
+      &-line
+        text-decoration line-through
+        color greyBBmedium
+
+      &-discount
+        border-radius: 2px;
+        size (34px 16px)
+        background redBB
+        color white
+        font-size: 10px;
+        line-height: 12px;
+        display flex
+        align-items center
+        justify-content center
+        margin-left 9px
+
+    &-new
+      display flex
+      align-items center
+
+      &-big
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 43px;
+
+  &__bottom
+    display flex
+    justify-content space-between
+    padding-top 30px
+    border-top 1px solid greyBB
+    align-items center
+
+    &-left
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+
+.extra
+  @extend .page__content-portfolio
+
+  &__title
+    @extend .page__content-portfolio-title
+    margin-bottom 18px
+
+  &__slider
+    @extend .page__content-portfolio-slider
+
+    &-left
+      @extend .page__content-portfolio-slider-left
+
+    &-right
+      @extend .page__content-portfolio-slider-right
+
+    &-item
+      display flex
+      height: 100px;
+      align-items: center;
+
+      &-content
+        width 107px
+        max-width 107px
+        display flex
+        flex-direction column
+        align-items center
+        margin-left 10px
+        text-align center
+
+        &-text
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+          letter-spacing: -0.115976px;
+
+      &-border
+        size (1px 88px)
+        background greyBB
+        margin-left 10px
+
+
+.delivery
+  @extend .extra
+  display flex
+
+  &__country
+    width 312px
+
+    &-title
+      @extend .extra__title
+
+    &-box
+      margin-bottom 8px
+
+      &:last-child
+        margin-bottom 0
+
+    &-name
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+
+    &-descr
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 22px;
+      margin-top 2px
+
+  &__border
+    @extend .extra__slider-item-border
+    height auto
+    margin 0 30px
+
+  &__deposit
+    width 193px
+
+    &-title
+      @extend .extra__title
+
+    &-time
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #696B7E;
+
+    &-sum
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 31px;
+
+
+.profile
+  position relative
+  @extend .delivery
+  flex-direction column
+
+  &__box
+    display flex
+
+  &__avatar
+    size (100px)
+    border-radius 50px
+    overflow hidden
+    margin-right 18px
+
+  &__info
+    &-id
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom 13px
+
+    &-secondname
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+
+    &-name
+      @extend .profile__info-secondname
+
+  &__skill
+    margin-top 30px
+
+    &-blue
+      @extend .sidebar__item-parents-name-btn
+      margin-right 10px
+
+    &-red
+      @extend .profile__skill-blue
+      @extend .sidebar__item-parents-name-btn-red
+
+    &-btn-last
+      @extend .profile__skill-red
+      padding 8px 9px
+      font-size: 12px;
+      line-height: 14px;
+
+  &__number
+    margin-top 20px
+    background: #F6F7FA;
+    border: 1px solid #E6EAFA;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height 40px
+    display flex
+    align-items center
+
+    &-text
+      font-size: 18px;
+      line-height: 22px;
+      text-decoration-line: underline;
+      text-align center
+      width 100%
+
+  &__message
+    color: white
+    display flex
+    align-items center
+    background: #28A845;
+    border-radius: 8px;
+    margin-top 10px
+    height 40px
+    justify-content center
+
+  &__address
+    margin-top 10px
+    position relative
+
+    &-input
+      width 100%
+      height 40px
+      background: #F6F7FA;
+      border: 1px solid #E6EAFA;
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding 10px 20px 10px 29px
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.369231px;
+
+  &__bottom
+    margin-top 12px
+    justify-content space-between
+    align-items center
+
+    &-star
+      @extend .sidebar__item-about-star
+      margin-bottom 0
+
+      & span
+        font-size: 26px;
+        line-height: 15px;
+
+.document
+  @extend .profile
+
+  &__title
+    @extend .delivery__country-title
+    margin-bottom 2px
+
+  &__box
+    display flex
+    justify-content space-between
+    align-items center
+    margin-top 30px
+
+  &__text
+    width 100%

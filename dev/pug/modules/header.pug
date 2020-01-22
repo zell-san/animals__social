@@ -1,0 +1,31 @@
+header
+
+    .container-fluid.header
+        .container.header__content
+            .header__content-logo
+                a
+                    +icon('logo')(href= "javascript:void(0)")
+            .header__content-search
+                +icon('search')
+                input.header__content-search-input(type="text" placeholder="Search...")
+                a.header__content-search-btn search
+            .header__content-language EN
+                +icon('play-button', 'play-button-lang')
+            .header__content-border-vert
+            .header__content-message
+                +icon('message')
+                .score 2
+            .header__content-like
+                +icon('like')
+                .score 5
+            .header__content-border-vert
+            .header__content-user
+                a.header__content-user-name Dobrev Nina
+                a.header__content-user-avatar
+                    img.header__content-user-avatar-img(src='static/img/content/photo.png')
+                .header__content-user-more
+                    +icon('play-button')
+            a.header__content-add
+                +icon('shape')
+                span To add an advert
+
