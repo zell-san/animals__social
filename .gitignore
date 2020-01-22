@@ -1,0 +1,7 @@
+node_modules
+.idea
+*.txt
+*.rar
+*.exe
+bash.exe.stackdump
+
